@@ -1,7 +1,10 @@
 ---
-const platform = "github";
-const username = "royasaucedo";
+import SocialMedia from '../components/SocialMedia.astro';
 ---
 <footer class="text-center py-4">
-    <p>Learn more about my projects on <a class="text-blue-700 underline font-bold" href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+    <ul class="flex justify-center gap-8">
+        <li><SocialMedia platform="twitter" username="royasaucedo"/></li>
+        <li><SocialMedia platform="github" username="royasaucedo"/></li>
+        <li><SocialMedia platform="instagram" username="royasaucedo"/></li>
+    </ul>
  </footer>
